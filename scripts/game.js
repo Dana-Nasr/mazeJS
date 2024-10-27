@@ -17,3 +17,8 @@ function writeResult() {
   box.textContent = "game lost";
 }
 
+document.getElementById("end").addEventListener("mouseenter", winGame);
+function winGame() {
+  document.getElementById("end").style.display = "none";
+  box.textContent = "game won";
+}
